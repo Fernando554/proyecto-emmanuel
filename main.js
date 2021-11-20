@@ -33,13 +33,13 @@ function salida(){
   
   var obj= new datos();
 
-  var nomb= document.getElementById("nombre").value;
-  var apell= document.getElementById("apellido").value;
-  var usu= document.getElementById("usuario").value;
+  var Nob = document.getElementById("nombre").value;
+  var Ape = document.getElementById("apellido").value;
+  var Usu = document.getElementById("usuario").value;
 
-  obj.setNombre(nomb);
-  obj.setApellido(apell);
-  obj.setUsuario(usu);
+  obj.setNombre(Nob);
+  obj.setApellido(Ape);
+  obj.setUsuario(Usu);
 
   var nr1= obj.getNombre();
   var nr2= obj.getApellido();
