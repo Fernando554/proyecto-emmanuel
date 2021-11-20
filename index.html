@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <form onsubmit="salida()">
+    <form>
     <fieldset>
 
         <ul>
@@ -37,11 +37,13 @@
         </ul>
 
         <ul>
-            <input type="submit" value="ENTREGA">
+            <input type="button" value="ENTREGA" onclick="salida()">
         </ul>
     </fieldset>
-
     </form>
-
+    
+    <fieldset>
+        <div id="capa"></div>
+    </fieldset>
 </body>
 </html>

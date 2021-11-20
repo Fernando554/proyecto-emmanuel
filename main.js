@@ -46,9 +46,10 @@ function salida(){
   var nr2= obj.getApellido();
   var nr3= obj.getUsuario();
 
-  document.write("Formularios con datos principales: ");
+  var capa = document.getElementById("capa");
+  var label = document.createElement("label");
 
-  document.write("NOMBRE: "+nr1+"<br>");
-  document.write("APELLIDOS: "+nr2+"<br>");
-  document.write("USUARIO: "+nr3+"<br>");
+  label.innerHTML = ("<br> <h1> SUS DATOS SON LOS SIGUIENTES: </h1> <br> NOMBRE: "+nr1+"<br> APELLIDOS: "+nr2+"<br> USUARIO: "+nr3+"<br>");
+
+  capa.appendChild(label);
 }
