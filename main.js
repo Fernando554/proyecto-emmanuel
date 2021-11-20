@@ -1,4 +1,5 @@
 function datos(){
+
   this.Nombre = "";
   this.Apellido = "";
   this.Usuario = "";
@@ -16,15 +17,15 @@ function datos(){
   }
 
 
-  this.setNombre = function(){
-    Nombre = Nob;
+  this.setNombre = function(Nom){
+    Nombre = Nom;
   }
 
-  this.setApellido = function(){
+  this.setApellido = function(Ape){
     Apellido = Ape;
   }
 
-  this.setUsuario = function(){
+  this.setUsuario = function(Usu){
     Usuario = Usu;
   }
 }
@@ -33,11 +34,11 @@ function salida(){
   
   var obj= new datos();
 
-  var Nob = document.getElementById("nombre").value;
+  var Nom = document.getElementById("nombre").value;
   var Ape = document.getElementById("apellido").value;
   var Usu = document.getElementById("usuario").value;
 
-  obj.setNombre(Nob);
+  obj.setNombre(Nom);
   obj.setApellido(Ape);
   obj.setUsuario(Usu);
 
@@ -50,6 +51,4 @@ function salida(){
   document.write("NOMBRE: "+nr1+"<br>");
   document.write("APELLIDOS: "+nr2+"<br>");
   document.write("USUARIO: "+nr3+"<br>");
-
-  
 }
